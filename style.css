@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+main{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+
+    background-color: #FFFF;
+}
+
+.side-left{
+    position: relative;
+    left: 10px;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+h3{
+    margin-top: 30px;
+    text-align: center;
+
+    color: #FFFF;
+}
+
+.number{
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.number p{
+    padding-top: 35px;
+    font-size: 55px;
+    font-weight: bolder;
+    color: #FFFF;
+}
+.number span{
+    color: hsl(241, 100%, 89%);
+}
+
+h1{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #FFFF;
+}
+.text{
+    margin: 33px;
+    margin-top: 10px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.side-rigth{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 0.226);
+   
+    height: 400px;
+    width: 350px;
+}
+
+h2{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+ li
+{
+    font-weight: bold;
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 22px;
+   
+    border-radius: 10px;
+}
+li > img{
+    height: 20px;
+}
+.list-one{
+    
+    padding-left: 20px;
+
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 95%, 0.5);
+}
+.list-one img{
+    margin-right: 10px;
+}
+.list-one p{
+    color: black;
+    padding-left: 100px;
+}
+.list-one span{
+    color: #7e7e7e;
+}
+
+.list-two{
+    
+    padding-left: 20px;
+
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 90%, 0.5);
+}
+.list-two img{
+    margin-right: 10px;
+}
+.list-two p{
+    color: black;
+    padding-left: 105px;
+}
+.list-two span{
+    color: #7e7e7e;
+}
+
+
+.list-three{
+    
+    padding-left: 20px;
+
+    color: hsl(166, 100%, 37%);
+    background-color:hsl(166, 50%, 90%, 0.5);
+}
+.list-three img{
+    margin-right: 10px;
+}
+.list-three p{
+    color: black;
+    padding-left: 120px;
+}
+.list-three span{
+    color: #7e7e7e;
+}
+
+
+.list-four{
+    
+    padding-left: 20px;
+    margin-bottom: 20px;
+
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 95%, 0.473);
+    ;
+}
+.list-four img{
+    margin-right: 10px;
+}
+.list-four p{
+    color: black;
+    padding-left: 120px;
+}
+.list-four span{
+    color: #7e7e7e;
+}
+
+button{
+    margin: auto;
+    margin-left: 30px;
+    align-items: center;
+    border-style: none;
+    height: 50px;
+    width: 80%;
+    border-radius: 30px;
+    background-color: hsl(224, 30%, 27%);
+    color: #FFFF;
+    font-size: 16px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+    background-image: linear-gradient( hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (max-width: 700px){
+    .box{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .side-left{
+        width: 300px;
+        border-radius: 0px 0px 10px 10px;
+        position: relative;
+        top: 10px;
+        left: 0px;
+    }
+    .side-rigth{
+        width: 300px;
+        border-radius: 0px 0px 10px 10px;
+        
+        top: 10px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .list-one p{
+        padding-left: 60px;
+    }
+    .list-two p{
+        padding-left: 65px;
+    }
+    .list-three p{
+        padding-left: 80px;
+    }
+    .list-four p{
+        padding-left: 80px;
+    }
+}
+
